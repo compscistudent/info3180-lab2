@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container col-md">
+  <div class="bg-primary text-white">
+    <img src="{{ url_for('static', filename='profilepic') }}" />
+    <h3>Thecia Roulston</h3>
+    <h5>@theci96</h5>
+    <h5>Kingston,Jamaica</h5>
+    <h5>Joined {{format_date_joined}} </h5>
+  </div>
+  <p>I am a language lover who has an interest in entrepreneurship.</p>
+  <div class="twPc-divStats">
+			<ul class="twPc-Arrange">
+				<li class="twPc-ArrangeSizeFit">
+						<span class="twPc-StatLabel twPc-block">Posts</span>
+						<span class="twPc-StatValue">10</span>
+					</a>
+				</li>
+				<li class="twPc-ArrangeSizeFit">
+						<span class="twPc-StatLabel twPc-block">Following</span>
+						<span class="twPc-StatValue">885</span>
+					</a>
+				</li>
+				<li class="twPc-ArrangeSizeFit">
+						<span class="twPc-StatLabel twPc-block">Followers</span>
+						<span class="twPc-StatValue">1810</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<button type="button" class="btn btn-success">Follow</button>
+</div>
+
+
+
+
+{% endblock %}
