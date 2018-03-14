@@ -42,7 +42,7 @@ def about():
 @app.route('/profile')
 def profile():
     """Render website's home page."""
-    return render_template('profile.html')
+    return render_template('profile.html', created_on =format_date_joined())
 
 
 ###

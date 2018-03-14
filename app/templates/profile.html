@@ -3,11 +3,11 @@
 {% block main %}
 <div class="container col-md">
   <div class="bg-primary text-white">
-    <img src="{{ url_for('static', filename='profilepic') }}" />
+    <img src="{{ url_for('static', filename='app/static/profilepic') }}" />
     <h3>Thecia Roulston</h3>
     <h5>@theci96</h5>
     <h5>Kingston,Jamaica</h5>
-    <h5>Joined {{format_date_joined}} </h5>
+    <h5>Joined {{created_on}} </h5>
   </div>
   <p>I am a language lover who has an interest in entrepreneurship.</p>
   <div class="twPc-divStats">
